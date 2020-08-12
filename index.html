@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Public/bootstrap.min.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #800080;justify-content: center;">
+        <p class="h5" style="color: white;">Calculadora Drª Rafaella</p>
+    </nav>
+    <br>
+    <form class="form-control" style="border: none;">
+        <div class="form-group">
+            <label for="nleucocitos" >Nº de Leucócitos</label>
+            <input type="number" class="form-control" id="nleucocitos" aria-describedby="nleucocitos">
+        </div>
+            <center>
+                <button type="button" class="btn btn" style="background-color: #800080;color: white;" onclick="calcular()">Calcular</button>
+                <button type="reset" class="btn btn-danger" onclick="ocultar()">Limpar</button>
+            </center>
+        <br>
+
+        <span id="resultado" style="display: none"></span>
+    </form>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="Public/core.js"></script>
+</body>
+
+</html>
